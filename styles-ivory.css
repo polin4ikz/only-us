@@ -108,3 +108,23 @@ body { background:var(--paper); }
 .tiny-icon, .entry-mark { background:#DED4C6; color:#516B84; }
 .mobile-nav button.active span:first-child { background:transparent; padding:0; }
 .nav-item.active { background:#E3D9CC; color:#344C5D; }
+
+
+/* Clear slate-blue accents, while keeping all large surfaces warm ivory. */
+.welcome-card.card {
+  background:linear-gradient(112deg,#EAE0C8 0%,#EAE0C8 68%,#D7E1E8 100%);
+  border-left:6px solid #516B84;
+}
+.welcome-card h2 { color:#405A73; }
+.welcome-card:before,.welcome-card:after { border-color:#516B84; opacity:.34; }
+.stats-card .tiny-icon { background:#516B84; color:#EAE0C8; }
+.stat-number { color:#516B84; }
+.quick-card .quick-symbol,.feature-card .quick-symbol { color:#516B84; }
+.entry-mark,.tiny-icon { background:#D3E0E8; color:#405A73; }
+.btn.primary { background:#516B84; color:#EAE0C8; }
+.btn.primary:hover { background:#405A73; }
+.mobile-nav button.active { color:#405A73; }
+.mobile-nav button.active span:first-child {
+  background:#C9D8E3; color:#405A73; border-radius:10px; padding:3px 12px;
+}
+.nav-item.active { background:#D3E0E8; color:#344C5D; }
