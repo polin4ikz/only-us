@@ -84,3 +84,19 @@
 .mobile-nav button.active { color:#516b84; }
 .mobile-nav button.active span:first-child { background:#d6e0e8; border-radius:10px; padding:2px 10px; }
 .btn.primary { background:#516b84; }
+
+
+/* Final palette overrides: visible slate blue + warm ivory surfaces. */
+:root { --paper:#E6E5E4; --white:#EAE0C8; --blue:#516B84; --blue2:#536878; }
+body { background:var(--paper); }
+.card, .list-card, .detail-item, .quick-card, .feature-card { background:#EAE0C8; border-color:#D9D2C7; }
+.welcome-card.card { background:linear-gradient(118deg,#E8D8C3 0%,#DCE5EA 55%,#B9CAD8 100%); }
+.topbar { background:rgba(234,224,200,.96); }
+.mobile-nav { background:rgba(234,224,200,.97); }
+.mobile-nav button.active { color:#516B84; }
+.mobile-nav button.active span:first-child { background:#C9D8E3; border-radius:10px; padding:2px 10px; }
+.quick-symbol, .feature-card .quick-symbol, .tiny-icon, .entry-mark { color:#516B84; }
+.tiny-icon, .entry-mark { background:#D3E0E8; }
+.btn.primary { background:#516B84; color:#fff; }
+.btn.primary:hover { background:#405A73; }
+.text-link { color:#516B84; }
