@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#516B84">
+<title>ONLY US — MADE OF TWO.</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="manifest" href="manifest.webmanifest">
+</head>
+<body>
+<div class="app-shell">
+  <aside class="sidebar">
+    <div class="brand"><div class="brand-mark">o<span>u</span></div><div><div class="brand-name">ONLY US</div><div class="brand-tag">MADE OF TWO.</div></div></div>
+    <div class="couple-switch"><div class="avatars"><span>P</span><span>N</span></div><div><b>Наше пространство</b><small>Полина и Настя</small></div><span class="chevron">⌄</span></div>
+    <div class="nav-label">ПРОСТРАНСТВО</div>
+    <nav id="sideNav"></nav>
+    <div class="sidebar-bottom"><div class="sync-dot"></div><span>Сохранение на этом устройстве</span></div>
+  </aside>
+  <main class="main">
+    <header class="topbar">
+      <div class="mobile-brand">ONLY US <span>· MADE OF TWO.</span></div>
+      <div class="breadcrumbs" id="crumb">Главная</div>
+      <div class="top-actions"><button class="icon-btn" id="searchBtn" title="Поиск">⌕</button><button class="icon-btn" id="bellBtn" title="Уведомления">♧</button><button class="profile" id="profileBtn">P</button></div>
+    </header>
+    <section class="content" id="content"></section>
+    <nav class="mobile-nav" id="mobileNav"></nav>
+  </main>
+</div>
+<div class="modal-backdrop hidden" id="modal">
+  <div class="modal">
+    <div class="modal-head"><div><div class="eyebrow">ONLY US · НОВАЯ ЗАПИСЬ</div><h2 id="modalTitle">Добавить</h2></div><button class="close" id="closeModal">×</button></div>
+    <form id="entryForm">
+      <label>Название<input id="entryTitle" required maxlength="90" placeholder="Как назовём эту запись?"></label>
+      <label>Описание<textarea id="entryBody" rows="4" placeholder="Добавь детали, мысли или воспоминания…"></textarea></label>
+      <div class="form-grid"><label>Кто видит<select id="entryVisibility"><option value="shared">Общее</option><option value="private">Только я</option></select></label><label>Автор<select id="entryOwner"><option>Полина</option><option>Настя</option></select></label></div>
+      <div class="modal-actions"><button type="button" class="btn ghost" id="cancelModal">Отмена</button><button class="btn primary" type="submit">Сохранить запись <span>↗</span></button></div>
+    </form>
+  </div>
+</div>
+<div class="toast" id="toast"></div>
+<script src="app.js"></script>
+</body>
+</html>

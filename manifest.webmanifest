@@ -1,0 +1,9 @@
+{
+  "name": "ONLY US",
+  "short_name": "ONLY US",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#fbfaf8",
+  "theme_color": "#516b84",
+  "lang": "ru"
+}
