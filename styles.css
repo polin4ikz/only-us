@@ -100,3 +100,11 @@ body { background:var(--paper); }
 .btn.primary { background:#516B84; color:#fff; }
 .btn.primary:hover { background:#405A73; }
 .text-link { color:#516B84; }
+
+
+/* Warm ivory replaces white; blue remains an accent, not a surface color. */
+.card, .list-card, .detail-item, .quick-card, .feature-card { background-color:#EAE0C8; }
+.welcome-card.card { background:linear-gradient(118deg,#E8D8C3 0%,#EAE0C8 58%,#E3D7C8 100%); }
+.tiny-icon, .entry-mark { background:#DED4C6; color:#516B84; }
+.mobile-nav button.active span:first-child { background:transparent; padding:0; }
+.nav-item.active { background:#E3D9CC; color:#344C5D; }
