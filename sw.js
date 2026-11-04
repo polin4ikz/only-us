@@ -1,4 +1,4 @@
-const CACHE="onlyus-static-v2";
+const CACHE="onlyus-static-v3";
 const ASSETS=["./","./index.html","./styles-ivory.css","./app.js","./manifest.webmanifest"];
 self.addEventListener("install",event=>event.waitUntil((async()=>{const cache=await caches.open(CACHE);await cache.addAll(ASSETS);await self.skipWaiting()})()));
 self.addEventListener("activate",event=>event.waitUntil((async()=>{const keys=await caches.keys();await Promise.all(keys.filter(key=>key!==CACHE).map(key=>caches.delete(key)));await self.clients.claim()})()));
